@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDX10</title>
+    <style>
+        @font-face {
+            font-family: 'NeueHaasGroteskDisp Pro Md';
+            src: url('/font/NHaasGroteskDSPro-65Md.woff2') format('woff2'),
+                url('/font/NHaasGroteskDSPro-65Md.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+        }
+        h1, h2, h3, h4, h5, h6, .description, .label, .email {
+            font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
+            font-weight: bold;
+        }
+        body {
+            background-color: #FF5C00;
+            color: black;
+            margin: 0;
+            padding: 1rem;
+            font-size: 16px;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a.external:after {
+          /* The icon can be a SVG or image file */
+            content: url(/img/external.svg);
+            margin-left: 0.25rem;
+            position: relative;
+            display: inline-block;
+            width: 0.75rem;
+            height: 0.75rem;
+            content: "";
+            background: url(/img/external.svg) no-repeat 0 0;
+            background-size: 100%;
+        }
+        a.external:after > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header,  main {
+            position: relative;
+            z-index: 1;
+            font-size: 1.25rem;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .description {
+            max-width: 65rem;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            font-size: 2rem;
+        }
+        
+        .description p {
+            margin: 0; 
+        }
+
+        .description .aidx10 {
+            font-family: 'Times New Roman', serif;
+            font-weight: normal;
+        }
+
+        .social.mobile {
+            display: none;
+        }
+
+    
+        #logo {
+            width: 100px;
+        }
+
+        #icon {
+            width: 300px;
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            z-index: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .description {
+                font-size: 1.5rem;
+            }
+            header, main {
+                font-size: 1rem;
+            }
+            #icon {
+                width: 50vw;
+            }
+
+            .social.mobile {
+                display: block;
+            }
+            .social:not(.mobile) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/img/aidx10-logo.svg" alt="AIDx10" id="logo">
+        <div class="contact">
+            <div class="coming-soon">( SITE COMING SOON )</div>
+            <div class="email"><a href="mailto://contact@aidx10.org">contact@aidx10.org</a></div>
+            <div class="social mobile">
+                <a href="https://instagram.com" target="_blank">IG</a>
+                <a href="https://twitter.com" target="_blank">TW</a>
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://instagram.com" target="_blank">IG</a>
+            <a href="https://twitter.com" target="_blank">TW</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="description">
+            <p><span class="aidx10">Aid Extend</span> is a community of volunteers based in Kyiv, London, and Berlin.</p>
+            <p>Our goal is to build support networks in creative communities - music, art, design, fashion - to amplify and multiply the frontline aid efforts and collective resilience against the dominant military and colonial power of Russia.</p>
+        </section>
+
+        <section class="donations">
+            <div class="donation">
+                <h2>Paypal:</h2>
+                <p>
+                    <a class="external" href="https://paypal.com" target="_blank"><span class="label">Paypal Link</span></a>
+                    <br>
+                    <span class="label">Email</span> testtesttest@gmail.com
+                </p>
+            </div>
+
+            <div class="donation">
+                <h2>Crypto:</h2>
+                <p>
+                    <span class="label">BTC</span> 0x48G5R7k587kS54Vk8S59889
+                    <br>
+                    <span class="label">ETH</span> 0x48G5R7k587kS54Vk8S59889
+                    <br>
+                    <span class="label">XXX</span> 0x48G5R7k587kS54Vk8S59889
+                </p>
+            </div>
+
+            <div class="donation">
+                <h2>UAH Cards:</h2>
+                <p>
+                    <a class="external" href="https://monobank.com" target="_blank"><span class="label">Monobank Link</span></a>
+                    <br>
+                    <span class="label">Monobank Card</span> 5375 4141 1325 4462
+                    <br>
+                    <span class="label">Privatbank Card</span> 5169 3600 0639 1803
+                </p>
+            </div>
+
+            <div class="donation">
+                <h2>UAH Swift:</h2>
+                <p><span class="label">IBAN</span><br>UA7032201000002620133759934</p>
+                <p><span class="label">Account Number</span><br>2620133759934</p>
+                <p><span class="label">Receiver</span><br>Voikto Tetiana, 68600, Ukraine, reg.Odeska, district.Izmailskyi, c.Izmail, st.Haharina, bult. 28, fl. 4</p>
+                <p><span class="label">Beneficiary Bank</span><br>JSC Universal Bank, Kyiv, Ukraine</p>
+                <p><span class="label">Swift</span><br>UNJSUAUKXXX</p>
+            </div>
+
+            <div class="donation">
+                <h2>USD Swift:</h2>
+                <p><span class="label">IBAN</span><br>UA7032201000002620133759934</p>
+                <p><span class="label">Account Number</span><br>2620133759934</p>
+                <p><span class="label">Receiver</span><br>Voikto Tetiana, 68600, Ukraine, reg.Odeska, district.Izmailskyi, c.Izmail, st.Haharina, bult. 28, fl. 4</p>
+                <p><span class="label">Beneficiary Bank</span><br>JSC Universal Bank, Kyiv, Ukraine</p>
+                <p><span class="label">Swift</span><br>UNJSUAUKXXX</p>
+            </div>
+
+            <div class="donation">
+                <h2>EUR Swift:</h2>
+                <p><span class="label">IBAN</span><br>UA7032201000002620133759934</p>
+                <p><span class="label">Account Number</span><br>2620133759934</p>
+                <p><span class="label">Receiver</span><br>Voikto Tetiana, 68600, Ukraine, reg.Odeska, district.Izmailskyi, c.Izmail, st.Haharina, bult. 28, fl. 4</p>
+                <p><span class="label">Beneficiary Bank</span><br>JSC Universal Bank, Kyiv, Ukraine</p>
+                <p><span class="label">Swift</span><br>UNJSUAUKXXX</p>
+            </div>
+        </section>
+    </main>
+    <img src="/img/aidx10-icon.svg" alt="" id="icon">
+</body>
+</html>
