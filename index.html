@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIDX10</title>
+    <script>
+        (function() {
+            window.addEventListener('scroll', () => {
+                document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+            }, false);
+        })();        
+    </script>
     <style>
         @font-face {
             font-family: 'NeueHaasGroteskDisp Pro Md';
@@ -100,6 +107,9 @@
             bottom: 1rem;
             right: 1rem;
             z-index: 0;
+            animation: icon 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -1s);
         }
 
         @media screen and (max-width: 768px) {
@@ -118,6 +128,18 @@
             }
             .social:not(.mobile) {
                 display: none;
+            }
+        }
+
+        @keyframes icon {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(2);
+            }
+            100% {
+                transform: scale(1);
             }
         }
     </style>
