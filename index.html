@@ -92,6 +92,10 @@
             font-weight: normal;
         }
 
+        .donations {
+            max-width: 30rem;
+        }
+
         .social.mobile {
             display: none;
         }
@@ -101,16 +105,28 @@
             width: 100px;
         }
 
-        #icon {
+        .aidx10-icon {
             width: 300px;
             position: fixed;
             bottom: 1rem;
             right: 1rem;
             z-index: 0;
-            animation: icon 1s linear infinite;
+        }
+        .aidx10-icon.text {
+            animation: extend-text 1s linear infinite;
             animation-play-state: paused;
             animation-delay: calc(var(--scroll) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
         }
+        .aidx10-icon.arrow {
+            animation: extend-arrow 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+
 
         @media screen and (max-width: 768px) {
             .description {
@@ -119,7 +135,7 @@
             header, main {
                 font-size: 1rem;
             }
-            #icon {
+            .aidx10-icon {
                 width: 50vw;
             }
 
@@ -131,15 +147,20 @@
             }
         }
 
-        @keyframes icon {
+        @keyframes extend-text {
             0% {
                 transform: scale(1);
             }
-            50% {
-                transform: scale(2);
+            100% {
+                transform: scale(1.5);
+            }
+        }
+        @keyframes extend-arrow {
+            0% {
+                transform: scale(1);
             }
             100% {
-                transform: scale(1);
+                transform: scale(3);
             }
         }
     </style>
@@ -227,6 +248,7 @@
             </div>
         </section>
     </main>
-    <img src="/img/aidx10-icon.svg" alt="" id="icon">
+    <img src="/img/aidx10-icon-text.svg" alt="" class="aidx10-icon text">
+    <img src="/img/aidx10-icon-arrow.svg" alt="" class="aidx10-icon arrow">
 </body>
 </html>
