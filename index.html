@@ -56,7 +56,7 @@
             background-color: #FF5C00;
             color: black;
             margin: 0;
-            padding: 1rem;
+            padding: 0.1rem 1rem 1rem 1rem;
             font-size: 16px;
         }
         a {
@@ -105,10 +105,13 @@
         }
 
         .description {
-            max-width: 65rem;
+            max-width: 57rem;
             margin-top: 10vh;
             margin-bottom: 10vh;
-            font-size: 2rem;
+        }
+        .description, .donations h2, .donations h3 {
+            font-size: 1.75rem;
+            line-height: 1.1;
         }
 
         .description .aidx10 {
@@ -120,9 +123,12 @@
             max-width: 30rem;
         }
 
-        .donations h2, .donations h3 {
-            /**/
+        .donations h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
+
+
         *[data-clipboard-target] {
             position: relative;
             cursor: pointer;
@@ -240,7 +246,7 @@
             <div class="donation">
                 <h3>Paypal:</h3>
                 <p>
-                    <span class="label">Email</span> <span id="paypal" data-clipboard-target="#paypal">testtesttest@gmail.com</span>
+                    <span class="label">Email</span> <span id="paypal" data-clipboard-target="#paypal">mayabaklanova@gmail.com</span>
                 </p>
             </div>
 
@@ -286,7 +292,7 @@
             <div class="donation">
                 <h3>UAH (Local Transfer):</h3>
                 <p>
-                    <a class="external" href="https://monobank.com" target="_blank"><span class="label">Monobank Link</span></a>
+                    <a class="external" href="https://send.monobank.ua/jar/2PRUFBb1VZ" target="_blank"><span class="label">Monobank Link</span></a>
                     <br>
                     <span class="label">Monobank Card</span> <span id="monobank" data-clipboard-target="#monobank">5375 4141 1325 4462</span>
                     <br>
