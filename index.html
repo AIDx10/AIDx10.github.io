@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIDX10</title>
-    <script>
+    <meta name="description"
+        content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity." />
+    <meta name="robots" content="index" />
+    <meta property="og:title" content="AIDX10" />
+    <meta property="og:description"
+        content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity." />
+    <meta property="og:url" content="https://aidx10.org" />
+    <meta property="og:image" content="https://aidx10.org/img/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AIDX10" />
+    <meta name="twitter:description"
+        content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity." />
+    <meta name="twitter:image" content="https://aidx10.org/img/og.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/site.webmanifest">
+        <script>
         (function() {
             window.addEventListener('scroll', () => {
                 document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
@@ -27,6 +47,9 @@
         h1, h2, h3, h4, h5, h6, .description, .label, .email {
             font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
             font-weight: normal;
+        }
+        .cyrilic {
+            font-family: 'Inter', sans-serif;
         }
         body {
             background-color: #FF5C00;
@@ -57,17 +80,21 @@
             height: 100%;
         }
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
         header,  main {
             position: relative;
             z-index: 1;
             font-size: 1.25rem;
         }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
 
         .contact {
             display: flex;
@@ -82,10 +109,6 @@
             margin-bottom: 10vh;
             font-size: 2rem;
         }
-        
-        .description p {
-            margin: 0; 
-        }
 
         .description .aidx10 {
             font-family: 'Times New Roman', serif;
@@ -94,6 +117,22 @@
 
         .donations {
             max-width: 30rem;
+        }
+
+        .donations h2, .donations h3 {
+            /**/
+        }
+        *[data-clipboard-target] {
+            position: relative;
+            cursor: pointer;
+        }
+        *[data-clipboard-target]:hover:after {
+            content: "Click to copy";
+            position: absolute;
+            color: #fff;
+            left: 0;
+            top: 0;
+            width: 200px;
         }
 
         .social.mobile {
@@ -172,83 +211,104 @@
             <div class="coming-soon">( SITE COMING SOON )</div>
             <div class="email"><a href="mailto://contact@aidx10.org">contact@aidx10.org</a></div>
             <div class="social mobile">
-                <a href="https://instagram.com" target="_blank">IG</a>
-                <a href="https://twitter.com" target="_blank">TW</a>
+                <a href="https://www.instagram.com/aid_x_10" target="_blank">IG</a>
+                <a href="https://twitter.com/aid_x_10" target="_blank">TW</a>
             </div>
         </div>
         <div class="social">
-            <a href="https://instagram.com" target="_blank">IG</a>
-            <a href="https://twitter.com" target="_blank">TW</a>
+            <a href="https://www.instagram.com/aid_x_10" target="_blank">IG</a>
+            <a href="https://twitter.com/aid_x_10" target="_blank">TW</a>
         </div>
     </header>
 
     <main>
         <section class="description">
-            <p><span class="aidx10">Aid Extend</span> is a community of volunteers based in Kyiv, London, and Berlin.</p>
-            <p>Our goal is to build support networks in creative communities - music, art, design, fashion - to amplify and multiply the frontline aid efforts and collective resilience against the dominant military and colonial power of Russia.</p>
+            <p><span class="aidx10">Aid Extend</span> is a group of volunteers based in Kyiv, London, and Berlin. We are a small but mighty team of creative professionals, each hailing from diverse backgrounds, such as music, design, and social activism. Our mission is clear: to fight for sovereignty and freedom of Ukraine.</p>
+            <p>AIDx10 is a product of the people coming together to support one another. We aim to build support networks in creative communities - music, art, design, fashion - to amplify and multiply the frontline aid efforts and collective resilience against the terrorist state Russia.</p>
         </section>
 
         <section class="donations">
+            <h2>Donation options:</h2>
             <div class="donation">
-                <h2>Paypal:</h2>
+                <h3>Paypal:</h3>
                 <p>
-                    <a class="external" href="https://paypal.com" target="_blank"><span class="label">Paypal Link</span></a>
-                    <br>
-                    <span class="label">Email</span> testtesttest@gmail.com
+                    <span class="label">Email</span> <span id="paypal" data-clipboard-target="#paypal">testtesttest@gmail.com</span>
                 </p>
             </div>
 
             <div class="donation">
-                <h2>Crypto:</h2>
-                <p>
-                    <span class="label">BTC</span> 0x48G5R7k587kS54Vk8S59889
-                    <br>
-                    <span class="label">ETH</span> 0x48G5R7k587kS54Vk8S59889
-                    <br>
-                    <span class="label">XXX</span> 0x48G5R7k587kS54Vk8S59889
-                </p>
+                <h3>Crypto:</h3>
+                <p><span class="label">TRC20: USDC, USDT (Or any TRC20 token)</span>
+                    <br><span id="trc20" data-clipboard-target="#trc20">TPjdS8pkFpfYdW2ZP2BmwX3esBvHhFeNKv</span></p>
+                <p><span class="label">ERC20: ETH, USDC, USDT (Or any ERC20 token)</span>
+                    <br><span id="erc20" data-clipboard-target="#erc20">0xfA6b17FEcE4CDb20DC94dC2c12DFD7a8f26F15A6</span></p>
+                <p><span class="label">BTC</span>
+                    <br><span id="btc" data-clipboard-target="#btc">bc1q52c08lg3hkv8g24xtlnwx0v2qaputedn97rup5</span></p>
             </div>
 
             <div class="donation">
-                <h2>UAH Cards:</h2>
+                <h3>USD Swift:</h3>
+                <p><span class="label">IBAN</span>
+                    <br><span id="usd-swift-iban" data-clipboard-target="#usd-swift-iban">UA223220010000026201337576142</span></p>
+                <p><span class="label">Account Number</span>
+                    <br><span id="usd-swift-account" data-clipboard-target="#usd-swift-account">26201337576142</span></p>
+                <p><span class="label">Receiver</span>
+                    <br><span id="usd-swift-receiver" data-clipboard-target="#usd-swift-receiver">Voitko Tetiana, 68600, Ukraine, reg.Odeska, district.Izmailskyi, c.Izmail, st.Haharina, buil. 2B, fl. 4</span></p>
+                <p><span class="label">Beneficiary Bank</span>
+                    <br><span id="usd-swift-bank" data-clipboard-target="#usd-swift-bank">JSC Universal Bank, Kyiv, Ukraine</span></p>
+                <p><span class="label">Swift</span>
+                    <br><span id="usd-swift-swift" data-clipboard-target="#usd-swift-swift">UNJSUAUKXXX</span></p>
+            </div>
+
+            <div class="donation">
+                <h3>EUR Swift:</h3>
+                <p><span class="label">IBAN</span>
+                    <br><span id="eur-swift-iban" data-clipboard-target="#eur-swift-iban">UA7032201000002620133759934</span></p>
+                <p><span class="label">Account Number</span>
+                    <br><span id="eur-swift-account" data-clipboard-target="#eur-swift-account">2620133759934</span></p>
+                <p><span class="label">Receiver</span>
+                    <br><span id="eur-swift-receiver" data-clipboard-target="#eur-swift-receiver">Voitko Tetiana, 68600, Ukraine, reg.Odeska, district.Izmailskyi, c.Izmail, st.Haharina, buil. 2B, fl. 4</span></p>
+                <p><span class="label">Beneficiary Bank</span>
+                    <br><span id="eur-swift-bank" data-clipboard-target="#eur-swift-bank">JSC Universal Bank, Kyiv, Ukraine</span></p>
+                <p><span class="label">Swift</span>
+                    <br><span id="eur-swift-swift" data-clipboard-target="#usd-swift-swift">UNJSUAUKXXX</span></p>
+            </div>
+            
+
+            <div class="donation">
+                <h3>UAH (Local Transfer):</h3>
                 <p>
                     <a class="external" href="https://monobank.com" target="_blank"><span class="label">Monobank Link</span></a>
                     <br>
-                    <span class="label">Monobank Card</span> 5375 4141 1325 4462
+                    <span class="label">Monobank Card</span> <span id="monobank" data-clipboard-target="#monobank">5375 4141 1325 4462</span>
                     <br>
-                    <span class="label">Privatbank Card</span> 5169 3600 0639 1803
+                    <span class="label">Privatbank Card</span> <span id="privatbank" data-clipboard-target="#privatbank">5169 3600 0639 1803</span>
                 </p>
             </div>
 
-            <div class="donation">
-                <h2>UAH Swift:</h2>
-                <p><span class="label">IBAN</span><br>UA7032201000002620133759934</p>
-                <p><span class="label">Account Number</span><br>2620133759934</p>
-                <p><span class="label">Receiver</span><br>Voikto Tetiana, 68600, Ukraine, reg.Odeska, district.Izmailskyi, c.Izmail, st.Haharina, bult. 28, fl. 4</p>
-                <p><span class="label">Beneficiary Bank</span><br>JSC Universal Bank, Kyiv, Ukraine</p>
-                <p><span class="label">Swift</span><br>UNJSUAUKXXX</p>
-            </div>
 
             <div class="donation">
-                <h2>USD Swift:</h2>
-                <p><span class="label">IBAN</span><br>UA7032201000002620133759934</p>
-                <p><span class="label">Account Number</span><br>2620133759934</p>
-                <p><span class="label">Receiver</span><br>Voikto Tetiana, 68600, Ukraine, reg.Odeska, district.Izmailskyi, c.Izmail, st.Haharina, bult. 28, fl. 4</p>
-                <p><span class="label">Beneficiary Bank</span><br>JSC Universal Bank, Kyiv, Ukraine</p>
-                <p><span class="label">Swift</span><br>UNJSUAUKXXX</p>
+                <h3>UAH Swift:</h3>
+                <p><span class="label">IBAN</span>
+                    <br><span id="uah-swift-iban" data-clipboard-target="#uah-swift-iban">UA083220010000026202304601986</span></p>
+                <p><span class="label cyrilic">IПН/ЄДРПОУ</span>
+                    <br><span id="uah-swift-account" data-clipboard-target="#uah-swift-account">3489413360</span></p>
+                <p><span class="label cyrilic">Отримувач</span>
+                    <br><span id="uah-swift-receiver" data-clipboard-target="#uah-swift-receiver">Войтко Тетяна Сергіївна</span></p>
             </div>
 
-            <div class="donation">
-                <h2>EUR Swift:</h2>
-                <p><span class="label">IBAN</span><br>UA7032201000002620133759934</p>
-                <p><span class="label">Account Number</span><br>2620133759934</p>
-                <p><span class="label">Receiver</span><br>Voikto Tetiana, 68600, Ukraine, reg.Odeska, district.Izmailskyi, c.Izmail, st.Haharina, bult. 28, fl. 4</p>
-                <p><span class="label">Beneficiary Bank</span><br>JSC Universal Bank, Kyiv, Ukraine</p>
-                <p><span class="label">Swift</span><br>UNJSUAUKXXX</p>
-            </div>
         </section>
     </main>
     <img src="/img/aidx10-icon-text.svg" alt="" class="aidx10-icon text">
     <img src="/img/aidx10-icon-arrow.svg" alt="" class="aidx10-icon arrow">
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <script>
+        // run on document load
+        document.addEventListener('DOMContentLoaded', () => {
+            // init clipboard
+            new ClipboardJS('[data-clipboard-target]');
+        });
+    </script>
 </body>
 </html>
