@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://aidx10.org"/>
-    <title>AIDX10</title>
-    <meta name="description"
-        content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity." />
     <meta name="robots" content="index" />
-    <meta property="og:title" content="AIDX10" />
-    <meta property="og:description"
-        content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity." />
-    <meta property="og:url" content="https://aidx10.org" />
-    <meta property="og:image" content="https://aidx10.org/img/og.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AIDX10" />
-    <meta name="twitter:description"
-        content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity." />
-    <meta name="twitter:image" content="https://aidx10.org/img/og.jpg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- HTML Meta Tags -->
+    <title>AIDx10</title>
+    <meta name="description" content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity.">
+    <link rel="canonical" href="https://aidx10.org"/>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://aidx10.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AIDx10">
+    <meta property="og:description" content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity.">
+    <meta property="og:image" content="https://aidx10.org/img/og.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="aidx10.org">
+    <meta property="twitter:url" content="https://aidx10.org/">
+    <meta name="twitter:title" content="AIDx10">
+    <meta name="twitter:description" content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity.">
+    <meta name="twitter:image" content="https://aidx10.org/img/og.jpg">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-    <link rel="manifest" href="/site.webmanifest">
-        <script>
+
+    <!-- Scripts -->
+    <script>
         (function() {
             window.addEventListener('scroll', () => {
-                document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-            }, false);
-        })();        
+                document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight))
+            }, false)
+        })()        
     </script>
+
+    <!-- Styles -->
     <style>
         @font-face {
             font-family: 'NeueHaasGroteskDisp Pro Md';
@@ -41,7 +50,6 @@
             font-style: normal;
             font-display: swap;
         }
-
         body {
             font-family: 'Times New Roman', serif;
         }
@@ -63,7 +71,6 @@
             color: inherit;
             text-decoration: none;
         }
-
         a.external:after {
           /* The icon can be a SVG or image file */
             content: url(/img/external.svg);
@@ -80,13 +87,11 @@
             width: 100%;
             height: 100%;
         }
-
         header,  main {
             position: relative;
             z-index: 1;
             font-size: 1.25rem;
         }
-
         header {
             position: sticky;
             top: 0;
@@ -95,15 +100,12 @@
             align-items: center;
             justify-content: space-between;
         }
-
-
         .contact {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-
         .description {
             max-width: 57rem;
             margin-top: 10vh;
@@ -113,22 +115,17 @@
             font-size: 1.75rem;
             line-height: 1.1;
         }
-
         .description .aidx10 {
             font-family: 'Times New Roman', serif;
             font-weight: normal;
         }
-
         .donations {
             max-width: 30rem;
         }
-
         .donations h3 {
             margin-top: 2rem;
             margin-bottom: 1rem;
         }
-
-
         *[data-clipboard-target] {
             position: relative;
             cursor: pointer;
@@ -149,7 +146,6 @@
             top: 0;
             width: 90px;
         }
-
         .social.mobile {
             display: none;
         }
@@ -157,7 +153,6 @@
         #logo {
             width: 100px;
         }
-
         .aidx10-icon {
             width: 300px;
             position: fixed;
@@ -191,7 +186,6 @@
             .aidx10-icon {
                 width: 50vw;
             }
-
             .social.mobile {
                 display: block;
             }
@@ -234,13 +228,11 @@
             <a href="https://twitter.com/aid_x_10" target="_blank">TW</a>
         </div>
     </header>
-
     <main>
         <section class="description">
             <p><span class="aidx10">Aid Extend</span> is a group of volunteers based in Kyiv, London, and Berlin. We are a small but mighty team of creative professionals, each hailing from diverse backgrounds, such as music, design, and social activism. Our mission is clear: to fight for sovereignty and freedom of Ukraine.</p>
             <p>AIDx10 is a product of the people coming together to support one another. We aim to build support networks in creative communities - music, art, design, fashion - to amplify and multiply the frontline aid efforts and collective resilience against the terrorist state Russia.</p>
         </section>
-
         <section class="donations">
             <h2>Donation options:</h2>
             <div class="donation">
@@ -249,7 +241,6 @@
                     <span class="label">Email</span> <span id="paypal" data-clipboard-target="#paypal">mayabaklanova@gmail.com</span>
                 </p>
             </div>
-
             <div class="donation">
                 <h3>Crypto:</h3>
                 <p><span class="label">TRC20: USDC, USDT (Or any TRC20 token)</span>
@@ -259,7 +250,6 @@
                 <p><span class="label">BTC</span>
                     <br><span id="btc" data-clipboard-target="#btc">bc1q52c08lg3hkv8g24xtlnwx0v2qaputedn97rup5</span></p>
             </div>
-
             <div class="donation">
                 <h3>USD Swift:</h3>
                 <p><span class="label">IBAN</span>
@@ -273,7 +263,6 @@
                 <p><span class="label">Swift</span>
                     <br><span id="usd-swift-swift" data-clipboard-target="#usd-swift-swift">UNJSUAUKXXX</span></p>
             </div>
-
             <div class="donation">
                 <h3>EUR Swift:</h3>
                 <p><span class="label">IBAN</span>
@@ -287,8 +276,6 @@
                 <p><span class="label">Swift</span>
                     <br><span id="eur-swift-swift" data-clipboard-target="#usd-swift-swift">UNJSUAUKXXX</span></p>
             </div>
-            
-
             <div class="donation">
                 <h3>UAH (Local Transfer):</h3>
                 <p>
@@ -299,8 +286,6 @@
                     <span class="label">Privatbank Card</span> <span id="privatbank" data-clipboard-target="#privatbank">5169 3600 0639 1803</span>
                 </p>
             </div>
-
-
             <div class="donation">
                 <h3>UAH Swift:</h3>
                 <p><span class="label">IBAN</span>
@@ -310,19 +295,17 @@
                 <p><span class="label cyrilic">Отримувач</span>
                     <br><span id="uah-swift-receiver" data-clipboard-target="#uah-swift-receiver">Войтко Тетяна Сергіївна</span></p>
             </div>
-
         </section>
     </main>
     <img src="/img/aidx10-icon-text.svg" alt="" class="aidx10-icon text">
     <img src="/img/aidx10-icon-arrow.svg" alt="" class="aidx10-icon arrow">
 
+    <!-- ClipboardJS -->
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
     <script>
-        // run on document load
         document.addEventListener('DOMContentLoaded', () => {
-            // init clipboard
-            new ClipboardJS('[data-clipboard-target]');
-        });
+            new ClipboardJS('[data-clipboard-target]')
+        })
     </script>
 </body>
 </html>
