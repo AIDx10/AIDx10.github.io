@@ -126,19 +126,26 @@
             position: relative;
             cursor: pointer;
         }
+        *[data-clipboard-target]:hover {
+            background: #FE8642;
+        }
         *[data-clipboard-target]:hover:after {
+            text-transform: uppercase;
+            font-size: 0.6em;
+            text-align: center;
+            background-color: black;
+            padding: 5px;
             content: "Click to copy";
             position: absolute;
             color: #fff;
-            left: 0;
+            right: -110px;
             top: 0;
-            width: 200px;
+            width: 90px;
         }
 
         .social.mobile {
             display: none;
         }
-
     
         #logo {
             width: 100px;
