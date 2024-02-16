@@ -100,6 +100,35 @@
             align-items: center;
             justify-content: space-between;
         }
+        .reports-spacer {
+            width: 150px;
+        }
+        .reports {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .reports > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .reports > a:before {
+            /* The icon can be a SVG or image file */
+            content: url(/img/reports.svg);
+            margin-right: 0.25rem;
+            position: relative;
+            display: inline-block;
+            width: 0.83rem;
+            height: 1rem;
+            content: "";
+            background: url(/img/reports.svg) no-repeat 0 0;
+            background-size: 100%;
+        }
+        .reports > a:before > img {
+            width: 100%;
+            height: 100%;
+        }
         .contact {
             display: flex;
             flex-direction: column;
@@ -148,6 +177,10 @@
         }
         .social.mobile {
             display: none;
+            flex-direction: row;
+        }
+        .social.mobile > * {
+            margin: 0 0.25rem;
         }
     
         #logo {
@@ -186,10 +219,12 @@
             .aidx10-icon {
                 width: 50vw;
             }
-            .social.mobile {
-                display: block;
+            .social.mobile,
+            .reports.mobile {
+                display: flex;
             }
-            .social:not(.mobile) {
+            .social:not(.mobile),
+            .reports:not(.mobile){
                 display: none;
             }
         }
@@ -215,13 +250,21 @@
 <body>
     <header>
         <img src="/img/aidx10-logo.svg" alt="AIDx10" id="logo">
+        <div class="reports-spacer reports">
+        </div>
         <div class="contact">
             <div class="coming-soon">( SITE COMING SOON )</div>
             <div class="email"><a href="mailto://contact@aidx10.org">contact@aidx10.org</a></div>
             <div class="social mobile">
+                <div class="reports mobile">
+                    <a href="https://drive.google.com/drive/folders/11GIRzILAQhJCxjN8AC1OmJPwZnTejByo" target="_blank">REPORTS /</a>
+                </div>
                 <a href="https://www.instagram.com/aid_x_10" target="_blank">IG</a>
                 <a href="https://twitter.com/aid_x_10" target="_blank">TW</a>
             </div>
+        </div>
+        <div class="reports-spacer reports">
+            <a href="https://drive.google.com/drive/folders/11GIRzILAQhJCxjN8AC1OmJPwZnTejByo" target="_blank">REPORTS</a>
         </div>
         <div class="social">
             <a href="https://www.instagram.com/aid_x_10" target="_blank">IG</a>
