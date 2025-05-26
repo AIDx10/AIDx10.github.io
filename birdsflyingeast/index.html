@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index" />
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- HTML Meta Tags -->
+  <title>Birds Flying East - AIDx10</title>
+  <meta name="description" content="The documentary of Klyn workshop and Ukraine's grassroots drone revolution">
+  <link rel="canonical" href="https://aidx10.org/birdsflyingeast/"/>
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://aidx10.org/birdsflyingeast/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Birds Flying East - AIDx10">
+  <meta property="og:description" content="The documentary of Klyn workshop and Ukraine's grassroots drone revolution">
+  <meta property="og:image" content="https://aidx10.org/img/og.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="aidx10.org">
+  <meta property="twitter:url" content="https://aidx10.org/birdsflyingeast/">
+  <meta name="twitter:title" content="Birds Flying East - AIDx10">
+  <meta name="twitter:description" content="The documentary of Klyn workshop and Ukraine's grassroots drone revolution">
+  <meta name="twitter:image" content="https://aidx10.org/img/og.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Scripts -->
+  <script> 
+    document.addEventListener('DOMContentLoaded', () => {
+      new ClipboardJS('[data-clipboard-target]')
+      
+      // Donate button scroll functionality
+      const donateBtns = document.querySelectorAll('.donate-button')
+      const donationsSection = document.getElementById('donations-section')
+      
+      if (donateBtns.length > 0 && donationsSection) {
+        donateBtns.forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault()
+            donationsSection.scrollIntoView({ behavior: 'smooth' })
+          })
+        })
+      }
+    })    
+  </script>
+
+  <!-- ClipboardJS -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new ClipboardJS('[data-clipboard-target]')
+    })
+  </script>
+
+</head>
+<body class="light-bg">
+  <header class="site-header">
+    <a href="/" class="header-corner site-logo">
+      <img src="/img/aidx10-logo.svg" alt="AIDx10">
+    </a>
+    <div class="header-spacer"></div>
+    <div class="header-middle header-donate">
+      <a href="#" class="donate-button">DONATE HERE</a>
+    </div>
+    <div class="header-spacer">
+    </div>
+    <div class="header-corner header-nav">
+      <a href="https://www.instagram.com/aid_x_10" target="_blank">IG</a>
+      <a href="https://twitter.com/aid_x_10" target="_blank">TW</a>
+    </div>
+    <div class="header-mobile">
+      <div class="header-donate mobile">
+        <a href="#" class="donate-button">DONATE HERE</a>
+      </div>
+      <div class="header-mobile-inner">
+        <div class="header-nav mobile">
+          <a href="https://www.instagram.com/aid_x_10" target="_blank">IG</a>
+          <a href="https://twitter.com/aid_x_10" target="_blank">TW</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="birds-title">
+      <img src="/img/birdsflyingeast.svg" alt="Birds Flying East">
+    </section>
+    
+    <section class="birds-subtitle">
+      The documentary of Klyn workshop and Ukraine's grassroots drone revolution
+    </section>
+
+    <section class="birds-video-container">
+      <div class="birds-video-container-inner">
+        <iframe
+          src="https://www.youtube.com/embed/xxxxxxx&amp;controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer;; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="birds-description">
+      <h2>About "Birds Flying East"</h2>
+      <p>From artist to defender, florist to innovator—this is Ukraine today. Our documentary captures how Kseniia Kalmus transformed from creating floral arrangements to leading the Klyn workshop, a powerful example of how Ukraine's grassroots resistance movement functions on the ground.</p>
+      <p>When russia's invasion left Ukraine outgunned, citizens didn't wait for international support—they invented their own resistance. What began in kitchens and garages has exploded into a nationwide movement that has revolutionized modern warfare. Today, Ukraine leads the world in drone innovation, with civilian workshops developing technologies that military powers now study and emulate.</p>
+      <p>In Kseniia's Kyiv-based Klyn workshop, engineers work alongside teachers, programmers with pensioners, students with artists—each bringing unique skills to a shared mission. This grassroots phenomenon represents Ukraine's most powerful weapon: the collective genius of ordinary people refusing to surrender their freedom.</p>
+      <p>"Birds Flying East" documents this unprecedented citizen response—a story of how Ukrainians united across all divides when faced with extinction, creating not just drones but a new model of resistance that may change defense strategies forever.</p>      
+      <div class="goal">Our goal: 332,000 UAH / 7,000 EUR</div>
+    </section>
+
+    <section id="donations-section" class="donations-section orange-bg">
+      <div class="donations-section-inner">
+        <h2>Donation options:</h2>
+        <div class="donation-method">
+          <h3>Paypal:</h3>
+          <p>
+            <span class="donation-label">Email</span> <span id="paypal" data-clipboard-target="#paypal">donateaidx10@gmail.com</span>
+          </p>
+        </div>
+        <div class="donation-method">
+          <h3>EUR Swift:</h3>
+          <p><span class="donation-label">IBAN</span>
+            <br><span id="eur-swift-iban" data-clipboard-target="#eur-swift-iban">UA703220010000026201337579934</span></p>
+          <p><span class="donation-label">Account Number</span>
+            <br><span id="eur-swift-account" data-clipboard-target="#eur-swift-account">2620133759934</span></p>
+          <p><span class="donation-label">Receiver</span>
+            <br><span id="eur-swift-receiver" data-clipboard-target="#eur-swift-receiver">Voitko Tetiana</span></p>
+          <p><span class="donation-label">Beneficiary Bank</span>
+            <br><span id="eur-swift-bank" data-clipboard-target="#eur-swift-bank">JSC Universal Bank, Kyiv, Ukraine</span></p>
+          <p><span class="donation-label">Swift</span>
+            <br><span id="eur-swift-swift" data-clipboard-target="#usd-swift-swift">UNJSUAUKXXX</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html> 

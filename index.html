@@ -1,354 +1,158 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index" />
-    <link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index" />
+  <link rel="manifest" href="/site.webmanifest">
 
-    <!-- HTML Meta Tags -->
-    <title>AIDx10</title>
-    <meta name="description" content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity.">
-    <link rel="canonical" href="https://aidx10.org"/>
+  <!-- HTML Meta Tags -->
+  <title>AIDx10</title>
+  <meta name="description" content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity.">
+  <link rel="canonical" href="https://aidx10.org"/>
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://aidx10.org/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="AIDx10">
-    <meta property="og:description" content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity.">
-    <meta property="og:image" content="https://aidx10.org/img/og.jpg">
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://aidx10.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AIDx10">
+  <meta property="og:description" content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity.">
+  <meta property="og:image" content="https://aidx10.org/img/og.jpg">
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="aidx10.org">
-    <meta property="twitter:url" content="https://aidx10.org/">
-    <meta name="twitter:title" content="AIDx10">
-    <meta name="twitter:description" content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity.">
-    <meta name="twitter:image" content="https://aidx10.org/img/og.jpg">
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="aidx10.org">
+  <meta property="twitter:url" content="https://aidx10.org/">
+  <meta name="twitter:title" content="AIDx10">
+  <meta name="twitter:description" content="A group of volunteers uniting in Kyiv, London, and Berlin for Ukraine's resistance. Providing vital resources, raising awareness, and fostering creative unity.">
+  <meta name="twitter:image" content="https://aidx10.org/img/og.jpg">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Scripts -->
-    <script>
-        (function() {
-            window.addEventListener('scroll', () => {
-                document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight))
-            }, false)
-        })()        
-    </script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
 
-    <!-- Styles -->
-    <style>
-        @font-face {
-            font-family: 'NeueHaasGroteskDisp Pro Md';
-            src: url('/font/NHaasGroteskDSPro-65Md.woff2') format('woff2'),
-                url('/font/NHaasGroteskDSPro-65Md.woff') format('woff');
-            font-weight: 500;
-            font-style: normal;
-            font-display: swap;
-        }
-        body {
-            font-family: 'Times New Roman', serif;
-        }
-        h1, h2, h3, h4, h5, h6, .description, .label, .email {
-            font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
-            font-weight: normal;
-        }
-        .cyrilic {
-            font-family: 'Inter', sans-serif;
-        }
-        body {
-            background-color: #FF5C00;
-            color: black;
-            margin: 0;
-            padding: 0.1rem 1rem 1rem 1rem;
-            font-size: 16px;
-        }
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-        a.external:after {
-          /* The icon can be a SVG or image file */
-            content: url(/img/external.svg);
-            margin-left: 0.25rem;
-            position: relative;
-            display: inline-block;
-            width: 0.75rem;
-            height: 0.75rem;
-            content: "";
-            background: url(/img/external.svg) no-repeat 0 0;
-            background-size: 100%;
-        }
-        a.external:after > img {
-            width: 100%;
-            height: 100%;
-        }
-        header,  main {
-            position: relative;
-            z-index: 1;
-            font-size: 1.25rem;
-        }
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .reports-spacer {
-            width: 150px;
-        }
-        .reports {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .reports > a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .reports > a:before {
-            /* The icon can be a SVG or image file */
-            content: url(/img/reports.svg);
-            margin-right: 0.25rem;
-            position: relative;
-            display: inline-block;
-            width: 0.83rem;
-            height: 1rem;
-            content: "";
-            background: url(/img/reports.svg) no-repeat 0 0;
-            background-size: 100%;
-        }
-        .reports > a:before > img {
-            width: 100%;
-            height: 100%;
-        }
-        .contact {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .description {
-            max-width: 57rem;
-            margin-top: 10vh;
-            margin-bottom: 10vh;
-        }
-        .description, .donations h2, .donations h3 {
-            font-size: 1.75rem;
-            line-height: 1.1;
-        }
-        .description .aidx10 {
-            font-family: 'Times New Roman', serif;
-            font-weight: normal;
-        }
-        .donations {
-            max-width: 30rem;
-        }
-        .donations h3 {
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        *[data-clipboard-target] {
-            position: relative;
-            cursor: pointer;
-        }
-        *[data-clipboard-target]:hover {
-            background: #FE8642;
-        }
-        *[data-clipboard-target]:hover:after {
-            text-transform: uppercase;
-            font-size: 0.6em;
-            text-align: center;
-            background-color: black;
-            padding: 5px;
-            content: "Click to copy";
-            position: absolute;
-            color: #fff;
-            right: -110px;
-            top: 0;
-            width: 90px;
-        }
-        .social.mobile {
-            display: none;
-            flex-direction: row;
-        }
-        .social.mobile > * {
-            margin: 0 0.25rem;
-        }
-    
-        #logo {
-            width: 100px;
-        }
-        .aidx10-icon {
-            width: 300px;
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            z-index: 0;
-        }
-        .aidx10-icon.text {
-            animation: extend-text 1s linear infinite;
-            animation-play-state: paused;
-            animation-delay: calc(var(--scroll) * -1s);
-            animation-iteration-count: 1;
-            animation-fill-mode: both;
-        }
-        .aidx10-icon.arrow {
-            animation: extend-arrow 1s linear infinite;
-            animation-play-state: paused;
-            animation-delay: calc(var(--scroll) * -1s);
-            animation-iteration-count: 1;
-            animation-fill-mode: both;
-        }
+  <!-- Scripts -->
+  <script>
+    (function() {
+      window.addEventListener('scroll', () => {
+        document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight))
+      }, false)
+    })()    
+  </script>
 
+  <!-- ClipboardJS -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new ClipboardJS('[data-clipboard-target]')
+    })
+  </script>
 
-        @media screen and (max-width: 768px) {
-            .description {
-                font-size: 1.5rem;
-            }
-            header, main {
-                font-size: 1rem;
-            }
-            .aidx10-icon {
-                width: 50vw;
-            }
-            .social.mobile,
-            .reports.mobile {
-                display: flex;
-            }
-            .social:not(.mobile),
-            .reports:not(.mobile){
-                display: none;
-            }
-        }
-
-        @keyframes extend-text {
-            0% {
-                transform: scale(1);
-            }
-            100% {
-                transform: scale(1.5);
-            }
-        }
-        @keyframes extend-arrow {
-            0% {
-                transform: scale(1);
-            }
-            100% {
-                transform: scale(3);
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <img src="/img/aidx10-logo.svg" alt="AIDx10" id="logo">
-        <div class="reports-spacer reports">
+  <header class="site-header">
+    <img class="header-corner site-logo" src="/img/aidx10-logo.svg" alt="AIDx10">
+    <div class="header-spacer"></div>
+    <div class="header-middle header-contact">
+      <div class="contact-email"><a href="mailto://contact@aidx10.org">contact@aidx10.org</a></div>
+    </div>
+    <div class="header-spacer header-reports">
+      <a href="https://drive.google.com/drive/folders/11GIRzILAQhJCxjN8AC1OmJPwZnTejByo" target="_blank">REPORTS</a>
+    </div>
+    <div class="header-corner header-nav">
+      <a href="https://www.instagram.com/aid_x_10" target="_blank">IG</a>
+      <a href="https://twitter.com/aid_x_10" target="_blank">TW</a>
+    </div>
+    <div class="header-mobile">
+      <div class="header-contact mobile">
+        <div class="contact-email"><a href="mailto://contact@aidx10.org">contact@aidx10.org</a></div>
+      </div>
+      <div class="header-mobile-inner">
+        <div class="header-reports mobile">
+          <a href="https://drive.google.com/drive/folders/11GIRzILAQhJCxjN8AC1OmJPwZnTejByo" target="_blank">REPORTS</a>
         </div>
-        <div class="contact">
-            <div class="coming-soon">( SITE COMING SOON )</div>
-            <div class="email"><a href="mailto://contact@aidx10.org">contact@aidx10.org</a></div>
-            <div class="social mobile">
-                <div class="reports mobile">
-                    <a href="https://drive.google.com/drive/folders/11GIRzILAQhJCxjN8AC1OmJPwZnTejByo" target="_blank">REPORTS /</a>
-                </div>
-                <a href="https://www.instagram.com/aid_x_10" target="_blank">IG</a>
-                <a href="https://twitter.com/aid_x_10" target="_blank">TW</a>
-            </div>
+        <div class="header-nav mobile">
+          <a href="https://www.instagram.com/aid_x_10" target="_blank">IG</a>
+          <a href="https://twitter.com/aid_x_10" target="_blank">TW</a>
         </div>
-        <div class="reports-spacer reports">
-            <a href="https://drive.google.com/drive/folders/11GIRzILAQhJCxjN8AC1OmJPwZnTejByo" target="_blank">REPORTS</a>
+      </div>
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="hero-description">
+      <p>AIDx10 is a group of volunteers based in Kyiv, London, and Berlin. We are a small but mighty team of creative professionals, each hailing from diverse backgrounds, such as music, design, and social activism. Our mission is clear: to fight for sovereignty and freedom of Ukraine.</p>
+      <p>AIDx10 is a product of the people coming together to support one another. We aim to build support networks in creative communities - music, art, design, fashion - to amplify and multiply the frontline aid efforts and collective resilience against the terrorist state russia.</p>
+    </section>
+    <section class="donations-section">
+      <div class="donations-section-inner">
+        <h2>Donation options:</h2>
+        <div class="donation-method">
+          <h3>Paypal:</h3>
+          <p>
+            <span class="donation-label">Email</span> <span id="paypal" data-clipboard-target="#paypal">donateaidx10@gmail.com</span>
+          </p>
         </div>
-        <div class="social">
-            <a href="https://www.instagram.com/aid_x_10" target="_blank">IG</a>
-            <a href="https://twitter.com/aid_x_10" target="_blank">TW</a>
+        <div class="donation-method">
+          <h3>Crypto:</h3>
+          <p><span class="donation-label">TRC20: USDC, USDT (Or any TRC20 token)</span>
+            <br><span id="trc20" data-clipboard-target="#trc20">TPjdS8pkFpfYdW2ZP2BmwX3esBvHhFeNKv</span></p>
+          <p><span class="donation-label">ERC20: ETH, USDC, USDT (Or any ERC20 token)</span>
+            <br><span id="erc20" data-clipboard-target="#erc20">0xfA6b17FEcE4CDb20DC94dC2c12DFD7a8f26F15A6</span></p>
+          <p><span class="donation-label">BTC</span>
+            <br><span id="btc" data-clipboard-target="#btc">bc1q52c08lg3hkv8g24xtlnwx0v2qaputedn97rup5</span></p>
         </div>
-    </header>
-    <main>
-        <section class="description">
-            <p>AIDx10 is a group of volunteers based in Kyiv, London, and Berlin. We are a small but mighty team of creative professionals, each hailing from diverse backgrounds, such as music, design, and social activism. Our mission is clear: to fight for sovereignty and freedom of Ukraine.</p>
-            <p>AIDx10 is a product of the people coming together to support one another. We aim to build support networks in creative communities - music, art, design, fashion - to amplify and multiply the frontline aid efforts and collective resilience against the terrorist state russia.</p>
-        </section>
-        <section class="donations">
-            <h2>Donation options:</h2>
-            <div class="donation">
-                <h3>Paypal:</h3>
-                <p>
-                    <span class="label">Email</span> <span id="paypal" data-clipboard-target="#paypal">donateaidx10@gmail.com</span>
-                </p>
-            </div>
-            <div class="donation">
-                <h3>Crypto:</h3>
-                <p><span class="label">TRC20: USDC, USDT (Or any TRC20 token)</span>
-                    <br><span id="trc20" data-clipboard-target="#trc20">TPjdS8pkFpfYdW2ZP2BmwX3esBvHhFeNKv</span></p>
-                <p><span class="label">ERC20: ETH, USDC, USDT (Or any ERC20 token)</span>
-                    <br><span id="erc20" data-clipboard-target="#erc20">0xfA6b17FEcE4CDb20DC94dC2c12DFD7a8f26F15A6</span></p>
-                <p><span class="label">BTC</span>
-                    <br><span id="btc" data-clipboard-target="#btc">bc1q52c08lg3hkv8g24xtlnwx0v2qaputedn97rup5</span></p>
-            </div>
-            <div class="donation">
-                <h3>USD Swift:</h3>
-                <p><span class="label">IBAN</span>
-                    <br><span id="usd-swift-iban" data-clipboard-target="#usd-swift-iban">UA223220010000026201337576142</span></p>
-                <p><span class="label">Account Number</span>
-                    <br><span id="usd-swift-account" data-clipboard-target="#usd-swift-account">26201337576142</span></p>
-                <p><span class="label">Receiver</span>
-                    <br><span id="usd-swift-receiver" data-clipboard-target="#usd-swift-receiver">Voitko Tetiana</span></p>
-                <p><span class="label">Beneficiary Bank</span>
-                    <br><span id="usd-swift-bank" data-clipboard-target="#usd-swift-bank">JSC Universal Bank, Kyiv, Ukraine</span></p>
-                <p><span class="label">Swift</span>
-                    <br><span id="usd-swift-swift" data-clipboard-target="#usd-swift-swift">UNJSUAUKXXX</span></p>
-            </div>
-            <div class="donation">
-                <h3>EUR Swift:</h3>
-                <p><span class="label">IBAN</span>
-                    <br><span id="eur-swift-iban" data-clipboard-target="#eur-swift-iban">UA703220010000026201337579934</span></p>
-                <p><span class="label">Account Number</span>
-                    <br><span id="eur-swift-account" data-clipboard-target="#eur-swift-account">2620133759934</span></p>
-                <p><span class="label">Receiver</span>
-                    <br><span id="eur-swift-receiver" data-clipboard-target="#eur-swift-receiver">Voitko Tetiana</span></p>
-                <p><span class="label">Beneficiary Bank</span>
-                    <br><span id="eur-swift-bank" data-clipboard-target="#eur-swift-bank">JSC Universal Bank, Kyiv, Ukraine</span></p>
-                <p><span class="label">Swift</span>
-                    <br><span id="eur-swift-swift" data-clipboard-target="#usd-swift-swift">UNJSUAUKXXX</span></p>
-            </div>
-            <div class="donation">
-                <h3>UAH (Local Transfer):</h3>
-                <p>
-                    <a class="external" href="https://send.monobank.ua/jar/2PRUFBb1VZ" target="_blank"><span class="label">Monobank Link</span></a>
-                    <br>
-                    <span class="label">Monobank Card</span> <span id="monobank" data-clipboard-target="#monobank">5375 4141 1325 4642</span>
-                    <br>
-                    <span class="label">Privatbank Card</span> <span id="privatbank" data-clipboard-target="#privatbank">5169 3600 0639 1803</span>
-                </p>
-            </div>
-            <div class="donation">
-                <h3>UAH Swift:</h3>
-                <p><span class="label">IBAN</span>
-                    <br><span id="uah-swift-iban" data-clipboard-target="#uah-swift-iban">UA083220010000026202304601986</span></p>
-                <p><span class="label cyrilic">IПН/ЄДРПОУ</span>
-                    <br><span id="uah-swift-account" data-clipboard-target="#uah-swift-account">3489413360</span></p>
-                <p><span class="label cyrilic">Отримувач</span>
-                    <br><span id="uah-swift-receiver" data-clipboard-target="#uah-swift-receiver">Войтко Тетяна Сергіївна</span></p>
-            </div>
-        </section>
-    </main>
-    <img src="/img/aidx10-icon-text.svg" alt="" class="aidx10-icon text">
-    <img src="/img/aidx10-icon-arrow.svg" alt="" class="aidx10-icon arrow">
-
-    <!-- ClipboardJS -->
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            new ClipboardJS('[data-clipboard-target]')
-        })
-    </script>
+        <div class="donation-method">
+          <h3>USD Swift:</h3>
+          <p><span class="donation-label">IBAN</span>
+            <br><span id="usd-swift-iban" data-clipboard-target="#usd-swift-iban">UA223220010000026201337576142</span></p>
+          <p><span class="donation-label">Account Number</span>
+            <br><span id="usd-swift-account" data-clipboard-target="#usd-swift-account">26201337576142</span></p>
+          <p><span class="donation-label">Receiver</span>
+            <br><span id="usd-swift-receiver" data-clipboard-target="#usd-swift-receiver">Voitko Tetiana</span></p>
+          <p><span class="donation-label">Beneficiary Bank</span>
+            <br><span id="usd-swift-bank" data-clipboard-target="#usd-swift-bank">JSC Universal Bank, Kyiv, Ukraine</span></p>
+          <p><span class="donation-label">Swift</span>
+            <br><span id="usd-swift-swift" data-clipboard-target="#usd-swift-swift">UNJSUAUKXXX</span></p>
+        </div>
+        <div class="donation-method">
+          <h3>EUR Swift:</h3>
+          <p><span class="donation-label">IBAN</span>
+            <br><span id="eur-swift-iban" data-clipboard-target="#eur-swift-iban">UA703220010000026201337579934</span></p>
+          <p><span class="donation-label">Account Number</span>
+            <br><span id="eur-swift-account" data-clipboard-target="#eur-swift-account">2620133759934</span></p>
+          <p><span class="donation-label">Receiver</span>
+            <br><span id="eur-swift-receiver" data-clipboard-target="#eur-swift-receiver">Voitko Tetiana</span></p>
+          <p><span class="donation-label">Beneficiary Bank</span>
+            <br><span id="eur-swift-bank" data-clipboard-target="#eur-swift-bank">JSC Universal Bank, Kyiv, Ukraine</span></p>
+          <p><span class="donation-label">Swift</span>
+            <br><span id="eur-swift-swift" data-clipboard-target="#usd-swift-swift">UNJSUAUKXXX</span></p>
+        </div>
+        <div class="donation-method">
+          <h3>UAH (Local Transfer):</h3>
+          <p>
+            <a class="external" href="https://send.monobank.ua/jar/2PRUFBb1VZ" target="_blank"><span class="donation-label">Monobank Link</span></a>
+            <br>
+            <span class="donation-label">Monobank Card</span> <span id="monobank" data-clipboard-target="#monobank">5375 4141 1325 4642</span>
+            <br>
+            <span class="donation-label">Privatbank Card</span> <span id="privatbank" data-clipboard-target="#privatbank">5169 3600 0639 1803</span>
+          </p>
+        </div>
+        <div class="donation-method">
+          <h3>UAH Swift:</h3>
+          <p><span class="donation-label">IBAN</span>
+            <br><span id="uah-swift-iban" data-clipboard-target="#uah-swift-iban">UA083220010000026202304601986</span></p>
+          <p><span class="label cyrilic">IПН/ЄДРПОУ</span>
+            <br><span id="uah-swift-account" data-clipboard-target="#uah-swift-account">3489413360</span></p>
+          <p><span class="label cyrilic">Отримувач</span>
+            <br><span id="uah-swift-receiver" data-clipboard-target="#uah-swift-receiver">Войтко Тетяна Сергіївна</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <img src="/img/aidx10-icon-text.svg" alt="" class="floating-icon floating-icon--text">
+  <img src="/img/aidx10-icon-arrow.svg" alt="" class="floating-icon floating-icon--arrow">
 </body>
 </html>

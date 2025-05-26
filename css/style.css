@@ -1,0 +1,405 @@
+/* ================================
+   FONTS
+   ================================ */
+@font-face {
+  font-family: 'NeueHaasGroteskDisp Pro Md';
+  src: url('/font/NHaasGroteskDSPro-65Md.woff2') format('woff2'),
+      url('/font/NHaasGroteskDSPro-65Md.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ================================
+   BASE STYLES
+   ================================ */
+body {
+  font-family: 'Times New Roman', serif;
+  background-color: #FF5C00;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Light background utility class */
+.light-bg {
+  background-color: #E6E6E6 !important;
+}
+
+/* Orange background utility class */
+.orange-bg {
+  background-color: #FF5C00 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* External link icon */
+a.external:after {
+  content: "";
+  background: url(/img/external.svg) no-repeat 0 0;
+  background-size: 100%;
+  margin-left: 0.25rem;
+  position: relative;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+/* Cyrillic text styling */
+.cyrilic {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ================================
+   LAYOUT - HEADER
+   ================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+/* Header layout */
+.header-corner {
+  width: 100px;
+}
+
+.header-spacer {
+  flex: 1;
+}
+
+/* Header logo */
+.site-logo > img {
+  width: 100px;
+}
+
+
+/* Header contact section */
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-email {
+  font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
+  font-weight: normal;
+}
+
+/* Header reports section */
+
+.header-reports {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-reports > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-reports > a:before {
+  content: "";
+  background: url(/img/reports.svg) no-repeat 0 0;
+  background-size: 100%;
+  margin-right: 0.25rem;
+  position: relative;
+  display: inline-block;
+  width: 0.83rem;
+  height: 1rem;
+}
+.header-reports.mobile > a::after {
+  content: "/";
+  margin-left: 0.25rem;
+}
+
+/* Header navigation */
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.25rem;
+}
+
+/* Header donate */
+.header-donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate-button {
+  font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  color: #E6E6E6;
+  background-color: #FF5C00;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #000000;
+}
+
+.header-donate.mobile .donate-button {
+  font-size: 1rem;
+}
+
+
+
+/* Header mobile */
+.header-mobile {
+  display: none;
+  flex-direction: column;
+}
+.header-mobile-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+/* ================================
+   LAYOUT - MAIN CONTENT
+   ================================ */
+.site-main {
+  position: relative;
+  z-index: 1;
+  font-size: 1.25rem;
+}
+.site-main > section {
+  padding: 1rem;
+}
+
+/* ================================
+   CONTENT SECTIONS - HERO DESCRIPTION
+   ================================ */
+.hero-description {
+  font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
+  font-weight: normal;
+  max-width: 57rem;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+
+.hero-description .aidx10 {
+  font-family: 'Times New Roman', serif;
+  font-weight: normal;
+}
+
+/* ================================
+   CONTENT SECTIONS - BIRDS FLYING EAST
+   ================================ */
+.birds-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.birds-title img {
+  width: 80vw;
+  max-width: 50rem;
+}
+
+.birds-subtitle,
+.birds-description,
+.birds-description h2 {
+  font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+.birds-subtitle {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.birds-description {
+  max-width: 57rem;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+/* ================================
+   CONTENT SECTIONS - RESPONSIVE VIDEO
+   ================================ */
+.birds-video-container {
+  position: relative;
+}
+
+.birds-video-container-inner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+.birds-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ================================
+   CONTENT SECTIONS - DONATIONS
+   ================================ */
+.donations-section {
+}
+
+.donations-section-inner {
+  max-width: 30rem;
+}
+
+
+.donations-section h2,
+.donations-section h3 {
+  font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+
+.donations-section h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.donation-label {
+  font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
+  font-weight: normal;
+}
+
+/* ================================
+   INTERACTIVE ELEMENTS - CLIPBOARD
+   ================================ */
+*[data-clipboard-target] {
+  position: relative;
+  cursor: pointer;
+}
+
+*[data-clipboard-target]:hover {
+  background: #FE8642;
+}
+
+*[data-clipboard-target]:hover:after {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  text-align: center;
+  background-color: black;
+  padding: 5px;
+  content: "Click to copy";
+  position: absolute;
+  color: #fff;
+  right: -110px;
+  top: 0;
+  width: 90px;
+}
+
+/* ================================
+   DECORATIVE ELEMENTS - FLOATING ICONS
+   ================================ */
+.floating-icon {
+  width: 300px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 0;
+}
+
+.floating-icon--text {
+  animation: extend-text 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.floating-icon--arrow {
+  animation: extend-arrow 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+/* ================================
+   ANIMATIONS
+   ================================ */
+@keyframes extend-text {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes extend-arrow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(3);
+  }
+}
+
+/* ================================
+   RESPONSIVE DESIGN - MOBILE
+   ================================ */
+@media screen and (max-width: 768px) {
+  /* Base typography adjustments */
+  .site-header, .site-main {
+    font-size: 1rem;
+  }
+  
+  .hero-description,
+  .birds-subtitle,
+  .birds-description,
+  .birds-description h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Mobile header navigation */
+  .header-mobile {
+    display: flex;
+  }
+
+  .header-contact:not(.mobile),
+  .header-reports:not(.mobile), 
+  .header-nav:not(.mobile),
+  .header-donate:not(.mobile) {
+    display: none;
+  }
+  
+  /* Mobile floating icons */
+  .floating-icon {
+    width: 50vw;
+  }
+
+  .birds-description {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
