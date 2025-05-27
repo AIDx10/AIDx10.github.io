@@ -224,7 +224,8 @@ a.external:after {
 
 .birds-subtitle,
 .birds-description,
-.birds-description h2 {
+.birds-description h2,
+.birds-description h3 {
   font-family: 'NeueHaasGroteskDisp Pro Md', 'Arial', sans-serif;
   font-weight: normal;
   font-size: 1.75rem;
@@ -377,7 +378,8 @@ a.external:after {
   .hero-description,
   .birds-subtitle,
   .birds-description,
-  .birds-description h2 {
+  .birds-description h2,
+  .birds-description h3 {
     font-size: 1.5rem;
   }
   
